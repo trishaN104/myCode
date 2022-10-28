@@ -1,16 +1,13 @@
-  //scanner imported and main method declared
+  
 import java.util.Scanner;
 
 class Main {
 
 
 
-//class and main method are declared
-
     public static void main(String[]args)
     {
       
-        //variables and scanner created
       
         Scanner scan=new Scanner(System.in);
         int choice;
@@ -24,7 +21,6 @@ class Main {
 
 
 
-//program introduction and user prompted to enter how many games they wish to play
       
         System.out.println("Welcome to Rock, Paper, Scissors!");
 System.out.println();
@@ -46,7 +42,6 @@ System.out.println();
 
 
       
-        //information printed based on user's choice of how many games they wish to play, variables i and k are set depending on the amount of games they wish to play (i is the total amount of games, k is the amount of games needed to win)
       
         if (choice==1)
         {
@@ -87,21 +82,17 @@ System.out.println();
 
 
       
-//outer loop is created so that the program loops until player doesn't want to play anymore, boolean control is the control of the loop
         while (control==true) 
         {
-          //scores/plays/counters are set to zero when the loop repeats
             score=0;
             cscore=0;
             int counter=0;
             String Cplay = null;
           
-            //inner loop is created to control the number of games, bollean innerControl is the control of the loop
           
             while (innerControl == true) 
             {
               
-                //user is prompted to play and counter increases to account for amount of times user has played
               
                 System.out.println("Enter a R for rock, S for scissor, or P for paper");
                play = scan.nextLine();
@@ -109,7 +100,6 @@ System.out.println();
                 counter=counter+1;
 
               
-//computer's play is determined using random and if statements
               
                 int cPlay = (int) (Math.random() * 3);
                 if (cPlay == 0)
@@ -125,7 +115,6 @@ System.out.println();
               System.out.println();
 
               
-                //winner of each game is determined by these nested if statements, score is updated and result is printed
               
                 if (play.equals("r")) {
                     if (Cplay.equals("p")) {
@@ -176,12 +165,10 @@ System.out.println();
               System.out.println();
               System.out.println();
 
-              //scores are printed
               
               System.out.println("Your score: "+score);
               System.out.println("Computer score: "+cscore);
 
-                //controls inner loop by using if statements to determine whether a winner has been determined or when user wants to stop playing
               
                 if (choice==4)
                 {
@@ -214,7 +201,7 @@ System.out.println();
 
 
             }
-//user is prompted to play again, this controls the outer loop
+          
             System.out.println("press p to play again");
             String playAgain=scan.nextLine();
             if (playAgain.equals("p"))
