@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
 
-/// <summary>
-/// This class inherits from TargetObject and represents a CrashObject.
-/// </summary>
 public class CrashObject : TargetObject
 {
     [Header("CrashObject")]
