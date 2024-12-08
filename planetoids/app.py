@@ -19,7 +19,9 @@ import json
 # Planetoids is NOT allowed to access anything in models.py
 
 class Planetoids(GameApp):
+    
     """
+
     The primary controller class for the Planetoids application
     
     This class extends GameApp and implements the various methods necessary for 
